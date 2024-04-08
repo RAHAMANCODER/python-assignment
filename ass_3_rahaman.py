@@ -15,14 +15,11 @@ class Calc:
     
     def divition(self):
       return self.num_a/self.num_b
-    
 value=Calc(2,4)  
 print(value.addition(),"add")  
 print(value.subtraction(),"sub")  
 print(value.multiply(),"mul")  
 print(value.divition(),"div")  
-
-
 
 """
 6 add
@@ -30,7 +27,6 @@ print(value.divition(),"div")
 8 mul
 0.5 div
 """
-
 #another example of class
 class MyName:
   def __init__(self,name,age):
@@ -40,15 +36,10 @@ class MyName:
 details=MyName("rahaman",19)
 print(details.name)
 print(details.age)
-
-
 """     
 rahaman
 19
 """
-
-
-
 #creating class in employee details
 class Employee:
     def __init__(self,name,age,company,number,salary,working):
@@ -78,8 +69,6 @@ try: #try block for code the error
     print(x)
 except: #except block is handled the error
    print("variable x is not defined")
-   
-
 try:
   numerator=int(input("enter the No:"))
   denumerator=int(input("enter the No:"))
@@ -126,8 +115,6 @@ def main():
            print("saterday")
          case 7:
            print("invalid date")
-           
-          
 #anothe example of match case
 grade =1
 match grade:
