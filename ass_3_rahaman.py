@@ -80,7 +80,6 @@ except: #except block is handled the error
    print("variable x is not defined")
    
 
-
 try:
   numerator=int(input("enter the No:"))
   denumerator=int(input("enter the No:"))
@@ -88,7 +87,6 @@ try:
   print(result)
 except:
   print("zero divition error") 
-  
   print("program ends")
 
 """
@@ -103,11 +101,11 @@ try:
   value=int(input("enter the index val:"))
   print(my_list[value])
 except IndexError:
-  print("cannot find the value for list")
-  """
+ print("cannot find the value for list")
+ 
+"""
 cannot find the value for list
 """
-
 
 def main():
        date=100
