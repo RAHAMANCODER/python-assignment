@@ -2,7 +2,7 @@ from random import randint
 
 class BankingSystem:
     def __init__(self):
-        self.creaditcard_number=[]
+        self.craditcard_number=[]
         self.pin_number=[]
         
     def welcome_screen(self):
@@ -21,33 +21,34 @@ class BankingSystem:
             return "Bye!" 
     
     def create_account(self):
-        creadit_card_number_gen=format(randint(0000000000,999999999))
+        cradit_card_number_gen=format(randint(0000000000,999999999))
         pin_number_gen=format(randint(0000,9999))
         
         self.creaditcard_number.append(creadit_card_number_gen)   
         self.pin_number.append(pin_number_gen)
         
         print("hello")
-        print("your creadit_card number is successfully created")
-        print("your creadit_card number:",creadit_card_number_gen)
+        print("your cradit_card number is successfully created")
+        print("your cradit_card number:",cradit_card_number_gen)
         print("your pin number",pin_number_gen)
         self.welcome_screen()
         
     def login_account(self):
-         print("Enter your creadit card number:")
+         print("Enter your cradit card number:")
          enter_card_number=int(input())
          print("Enter your pin number: ")
          enter_pin_number=int(input())
          
-         if enter_card_number in self.creaditcard_number and enter_pin_number in self.pin_number:
+         if enter_card_number in self.craditcard_number and enter_pin_number in self.pin_number:
              
              print("your account successfully created")
          else:
-             print(self.creaditcard_number,self.pin_number)
+             print(self.craditcard_number,self.pin_number)
              print("wrong account number")   
 
          self.welcome_screen()
 print(BankingSystem().welcome_screen())
+
 
 """
 1.crearting an account
